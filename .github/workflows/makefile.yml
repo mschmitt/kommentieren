@@ -15,4 +15,7 @@ jobs:
     - run: sudo apt-get -y update
     - run: sudo apt-get install -y --install-suggests graphviz
     - run: make
+    - uses: upload-pages-artifact@v1.0.7
+      with: 
+        path: out
     - uses: actions/deploy-pages@v1.2.3
