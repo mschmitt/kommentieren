@@ -1,4 +1,4 @@
-name: Makefile CI
+name: make
 
 on:
   push:
@@ -14,3 +14,4 @@ jobs:
     - run: sudo apt-get -y update
     - run: sudo apt-get install -y --install-suggests graphviz
     - run: make
+    - uses: actions/deploy-pages@v1.2.3
