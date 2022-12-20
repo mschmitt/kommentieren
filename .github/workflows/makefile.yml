@@ -1,4 +1,4 @@
-name: make
+name: build-and-deploy
 
 on:
   push:
@@ -15,4 +15,15 @@ jobs:
     - run: sudo apt-get -y update
     - run: sudo apt-get install -y --install-suggests graphviz
     - run: make
+    - uses: actions/upload-pages-artifact@v1.0.7
+      with: 
+        path: out
+  deploy:
+    needs: build
+    runs-on: ubuntu-22.04
+    permissions:
+      pages: write
+      id-token: write
+    steps:
     - uses: actions/deploy-pages@v1.2.3
+
