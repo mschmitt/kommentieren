@@ -1,0 +1,63 @@
+digraph foo {
+	labelloc="t";
+	rankdir="LR";
+	label="Soll ich kommentieren?";
+	fontsize="30pt";
+
+	// Replies
+	{ rank = same;
+	r01 [label="Kompletten Satz?"];
+	r02 [label="Versuche ich, den Verfasser\nzu maßregeln?"];
+	r03 [label="\"Wohl nichts besseres zu tun?\""];
+	r04 [label="\"Kann/weiß ich besser.\""];
+	r05 [label="Erkläre ich dem Verfasser\nseine eigene Pointe?"];
+	r06 [label="\"Sollte/Hätte/Könnte\""];
+	r07 [label="Bezugnahme auf\nnebensächliches Detail."];
+	r08 [label="\"Aber...\""];
+	r09 [label="\"Wo treibst du dich auch rum?!\""];
+	r10 [label="\"Thema interessiert mich nicht.\""];
+	r11 [label="Versuche ich das gesagte aus\nmeiner Perspektive zu präzisieren?"];
+	r12 [label="\"Muss man den kennen?\""];
+	};
+
+	// Intermediate Step 1
+	{ rank = same;
+	i01 [label="Konkrete Hilfe-\nstellung anbei?"];
+	i02 [label="NIX ABER"];
+	i03 [label="Habe ich die Pointe verstanden?"];
+	i04 [label="Bin ich hier der Aufpasser?"];
+	i05 [label="Alles unter meiner Würde."];
+	};
+
+	// Intermediate Step 2
+	{ rank = same;
+	j02 [label="Nein"];
+	j03 [label="Ach, egal"];
+	};
+
+	// Conclusions
+	{ rank = same;
+	cn [label="NICHT\nKOMMENTIEREN" fontsize=20];
+	};
+
+	// Relations
+	r01 -> j02;
+	r02 -> i04;
+	r03 -> cn;
+	r06 -> i05;
+	i05 -> cn;
+	r07 -> cn;
+	r04 -> i01;
+	r05 -> i03;
+	r11 -> i03;
+	i01 -> j02;
+	i04 -> j02;
+	i02 -> cn;
+	r09 -> cn;
+	i03 -> j03;
+	j03 -> cn;
+	r10 -> cn;
+	r08 -> i02;
+	j02 -> cn;
+	r12 -> cn;
+}
