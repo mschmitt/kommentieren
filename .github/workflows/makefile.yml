@@ -11,7 +11,6 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v3
-    - name: Install Dependencies
-      run: apt-get update; apt-get install -y --install-suggests graphviz
-    - name: Build
-      run: make
+    - run: sudo apt-get -y update
+    - run: sudo apt-get install -y --install-suggests graphviz
+    - run: make
