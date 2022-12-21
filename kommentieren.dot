@@ -19,6 +19,7 @@ digraph foo {
 	r11 [label="Versuche ich das gesagte aus\nmeiner Perspektive zu präzisieren?"];
 	r12 [label="\"Muss man den kennen?\""];
 	r13 [label="\"Probleme gibts.\""];
+	r14 [label="Unzufrieden mit der Wortwahl.\nAnglizismen, Gender etc."];
 	};
 
 	// Intermediate Step 1
@@ -28,12 +29,14 @@ digraph foo {
 	i03 [label="Habe ich die Pointe verstanden?"];
 	i04 [label="Bin ich hier der Aufpasser?"];
 	i05 [label="Alles unter meiner Würde."];
+	i06 [label="Bin ich Konrad Duden?"];
+	i07 [label="Habe ich das gesagte verstanden?"];
 	};
 
 	// Intermediate Step 2
 	{ rank = same;
 	j02 [label="Nein"];
-	j03 [label="Ach, egal"];
+	j03 [label="Egal"];
 	};
 
 	// Conclusions
@@ -50,7 +53,7 @@ digraph foo {
 	r07 -> cn;
 	r04 -> i01;
 	r05 -> i03;
-	r11 -> i03;
+	r11 -> i07;
 	i01 -> j02;
 	i04 -> j02;
 	i02 -> cn;
@@ -62,4 +65,7 @@ digraph foo {
 	j02 -> cn;
 	r12 -> cn;
 	r13 -> cn;
+	r14 -> i06;
+	i06 -> j03;
+	i07 -> j03;
 }
