@@ -18,6 +18,7 @@ digraph foo {
 	r10 [label="\"Thema interessiert mich nicht.\""];
 	r11 [label="Versuche ich das gesagte aus\nmeiner Perspektive zu präzisieren?"];
 	r12 [label="\"Muss man den kennen?\""];
+	r13 [label="\"Probleme gibts.\""];
 	};
 
 	// Intermediate Step 1
@@ -60,4 +61,5 @@ digraph foo {
 	r08 -> i02;
 	j02 -> cn;
 	r12 -> cn;
+	r13 -> cn;
 }
