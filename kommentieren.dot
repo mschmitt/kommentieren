@@ -12,14 +12,14 @@ digraph foo {
 	r04 [label="\"Kann/weiß ich besser.\""];
 	r05 [label="Erkläre ich dem Verfasser\nseine eigene Pointe?"];
 	r06 [label="\"Sollte/Hätte/Könnte\""];
-	r07 [label="Bezugnahme auf\nnebensächliches Detail."];
+	r07 [label="Bezugnahme auf vollkommen\nnebensächliches Detail."];
 	r08 [label="\"Aber...\""];
 	r09 [label="\"Wo treibst du dich auch rum?!\""];
 	r10 [label="\"Thema interessiert mich nicht.\""];
-	r11 [label="Versuche ich das gesagte aus\nmeiner Perspektive zu präzisieren?"];
+	r11 [label="Versuche ich, das gesagte\nentsprechend meiner subjektiven\nPerspektive zu präzisieren?"];
 	r12 [label="\"Muss man den kennen?\""];
 	r13 [label="\"Probleme gibts.\""];
-	r14 [label="Unzufrieden mit der Wortwahl.\nAnglizismen, Gender etc."];
+	r14 [label="Unzufrieden mit Wortwahl oder\nRechtschreibung. Anglizismen, Gender,\nKommasetzung, Tippfehler etc."];
 	};
 
 	// Intermediate Step 1
@@ -30,7 +30,7 @@ digraph foo {
 	i04 [label="Bin ich hier der Aufpasser?"];
 	i05 [label="Alles unter meiner Würde."];
 	i06 [label="Bin ich Konrad Duden?"];
-	i07 [label="Habe ich das gesagte verstanden?"];
+	i07 [label="Habe ich das gesagte\nüberhaupt verstanden?"];
 	};
 
 	// Intermediate Step 2
