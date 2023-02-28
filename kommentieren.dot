@@ -15,7 +15,7 @@ digraph foo {
 	r07 [label="Bezugnahme auf vollkommen\nnebensächliches Detail."];
 	r08 [label="\"Aber...\""];
 	r09 [label="\"Wo treibst du dich auch rum?!\""];
-	r10 [label="\"Thema interessiert mich nicht.\""];
+	r10 [label="\"Interessiert mich nicht/gefällt mir nicht.\""];
 	r11 [label="Versuche ich, das gesagte\nentsprechend meiner subjektiven\nPerspektive zu präzisieren?"];
 	r12 [label="\"Muss man den kennen?\""];
 	r13 [label="\"Probleme gibts.\""];
