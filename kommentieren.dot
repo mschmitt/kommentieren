@@ -20,6 +20,7 @@ digraph foo {
 	r12 [label="\"Muss man den kennen?\""];
 	r13 [label="\"Probleme gibts.\""];
 	r14 [label="Unzufrieden mit Wortwahl oder\nRechtschreibung. Anglizismen, Gender,\nKommasetzung, Tippfehler etc."];
+	r15 [label="Wusste ich schon!"];
 	};
 
 	// Intermediate Step 1
@@ -66,6 +67,7 @@ digraph foo {
 	r12 -> cn;
 	r13 -> cn;
 	r14 -> i06;
-	i06 -> j03;
+	i06 -> j02;
 	i07 -> j03;
+	r15 -> cn;
 }
