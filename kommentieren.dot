@@ -20,7 +20,7 @@ digraph foo {
 	r12 [label="\"Muss man den kennen?\""];
 	r13 [label="\"Probleme gibts.\""];
 	r14 [label="Unzufrieden mit Wortwahl oder\nRechtschreibung. Anglizismen, Gender,\nKommasetzung, Tippfehler etc."];
-	r15 [label="Wusste ich schon!"];
+	r15 [label="\"Wusste ich schon!\""];
 	};
 
 	// Intermediate Step 1
